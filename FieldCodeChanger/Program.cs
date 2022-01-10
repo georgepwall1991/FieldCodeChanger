@@ -14,7 +14,9 @@ namespace FieldCodeChanger //git test #47, the robots are starting to suspect I 
         {
             var changes = new List<FieldCodeManipulationDto>
             {
-                new(@"{ FIELDCODE1 }/{ FIELDCODE2 }/{ FIELDCODE3 }", @"{ FIELDCODE2 }/{ FIELDCODE3 }/{ FIELDCODE1 }")
+                new(@"{FEINIT}{CLIENTNO}{MATTERNO}", @"{CLIENTNO}/{MATTERNO}/{FEINIT \*charformat}")
+                new(@"{FEINIT \*charformat}/{CLIENTNO \*arabic}/{MATTERNO \*arabic}", @"{CLIENTNO \*arabic}/{MATTERNO \*arabic}/{FEINIT \*charformat}")
+                
             };
 
             XNamespace w = "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
