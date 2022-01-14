@@ -23,7 +23,11 @@ namespace FieldCodeChanger //git test #47, the robots are starting to suspect I 
                  *
                  * List of target sequences (all possible cases to be included):
                  * {FEINIT}{CLIENTNO}{MATTERNO}
+                 * { FEINIT }{ CLIENTNO }{ MATTERNO }
                  * {FEINIT}/{CLIENTNO}/{MATTERNO}
+                 * { FEINIT }/{ CLIENTNO }/{ MATTERNO }
+                 * {FEINIT}/{CLIENTNO \*arabic}/{MATTERNO \*arabic}
+                 * { FEINIT }/{ CLIENTNO \*arabic }/{ MATTERNO \*arabic }
                  * {CLIENTNO}/{MATTERNO}/{FEINIT \*charformat}
                  * {FEINIT \*charformat}/{CLIENTNO \*arabic}/{MATTERNO \*arabic}
                  * {CLIENTNO \*arabic}/{MATTERNO \*arabic}/{FEINIT \*charformat}
