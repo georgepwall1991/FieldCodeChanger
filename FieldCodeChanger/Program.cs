@@ -14,8 +14,8 @@ namespace FieldCodeChanger //git test #47, the robots are starting to suspect I 
         {
             var changes = new List<FieldCodeManipulationDto>
             {
-                new(@"{FEINIT}{CLIENTNO}{MATTERNO}", @"{CLIENTNO}/{MATTERNO}/{FEINIT \*charformat}")
-                new(@"{FEINIT \*charformat}/{CLIENTNO \*arabic}/{MATTERNO \*arabic}", @"{CLIENTNO \*arabic}/{MATTERNO \*arabic}/{FEINIT \*charformat}"
+                new(@"{FEINIT}{CLIENTNO}{MATTERNO}", @"{CLIENTNO}/{MATTERNO}/{FEINIT \*charformat}"),
+                new(@"{FEINIT \*charformat}/{CLIENTNO \*arabic}/{MATTERNO \*arabic}", @"{CLIENTNO \*arabic}/{MATTERNO \*arabic}/{FEINIT \*charformat}")
                 
                 /*
                  * What target sequences should all be changed to:
